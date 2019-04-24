@@ -1,0 +1,55 @@
+<html>
+<head>
+<link href="styles/style.css?v=444q" rel="stylesheet">
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+<script src="scripts/examples.js?v=224ffe34q4q" type="text/javascript"></script>
+</head>
+<body>
+
+<a href="registerID.html">registerID</a> | <a href="authID.html">authID</a> | <a href="updateID.html">updateID</a> | <a href="revokeID.html">revokeID</a>
+
+<section>
+
+<div class="header_section">
+	<h1>registerID example</h1>
+	<p>A simple example of how to register a new user on the TQNN API via registerID SDK call and javascript.</p>
+	<p>registerID does not use databases but rather a Neural Network to store credentials</p>
+	<p>This example uses the TQNN thin client on your application server side.</p>
+</div>
+
+<table class="example_layout">
+<tr>
+<td>
+
+	<div class="input_container">
+		<h1>Input</h1>
+		<p>Enter a username and password and press "register" to send a request to TQNN to register the credentials.</p>
+		<input type="text" id="username" placeholder="username"><br>
+		<input type="text" id="password" placeholder="password"><br>
+		<button id="action_button" onclick="registerIDExample();">register</button>
+	</div>
+</td>
+<td>
+	<div class="response_container">
+		<h1>Response JSON</h1>
+		<textarea id="api_response" rows="28" cols="80"></textarea>
+	</div>
+</td>
+</tr>
+
+
+<tr >
+<td colspan="2">
+<div class="documents_container">
+		<h1>Documentation</h1>
+		<iframe src="https://api.toridion.com/v1/registerID?docs" width="100%" height="500px"></iframe>
+	</div>
+</td>
+</tr>
+
+
+</table>
+</section>
+
+</body>
+</html>

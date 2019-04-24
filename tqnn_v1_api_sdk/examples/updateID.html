@@ -1,0 +1,56 @@
+<html>
+<head>
+<link href="styles/style.css?v=444q" rel="stylesheet">
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+<script src="scripts/examples.js?v=224fe34q4q" type="text/javascript"></script>
+</head>
+<body>
+
+<a href="registerID.html">registerID</a> | <a href="authID.html">authID</a> | <a href="updateID.html">updateID</a> | <a href="revokeID.html">revokeID</a>
+
+<section>
+
+<div class="header_section">
+	<h1>updateID example</h1>
+	<p>Update previously registered credentials with newly supplied ones.</p>
+	<p>Optionally add further credentials at the same time</p>
+
+</div>
+
+<table class="example_layout">
+<tr>
+<td>
+
+	<div class="input_container">
+		<h1>Input</h1>
+		<p>Enter a username and password and press "update" to send a request to TQNN to update the credentials.</p>
+		<input type="text" id="username" placeholder="username"><br>
+		<input type="text" id="password" placeholder="password"><br>
+		<input type="text" id="new_password" placeholder="new password"><br>
+		<button id="action_button" onclick="updateIDExample();">update</button>
+	</div>
+</td>
+<td>
+	<div class="response_container">
+		<h1>Response JSON</h1>
+		<textarea id="api_response" rows="28" cols="80"></textarea>
+	</div>
+</td>
+</tr>
+
+
+<tr >
+<td colspan="2">
+<div class="documents_container">
+		<h1>Documentation</h1>
+		<iframe src="https://api.toridion.com/v1/updateID?docs" width="100%" height="500px"></iframe>
+	</div>
+</td>
+</tr>
+
+
+</table>
+</section>
+
+</body>
+</html>

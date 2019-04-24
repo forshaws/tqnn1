@@ -1,0 +1,139 @@
+body{
+margin-top:0px;
+margin-left:0px;
+margin-right:0px;
+background-color:#ffffff;
+min-width:640px; /* suppose you want minimun width of 1000px */
+   width: auto !important;  /* Firefox will set width as auto */
+   width:640px;             /* As IE ignores !important it will set width as 1000px; */
+
+}
+
+section {
+	font-family:'Open Sans', Verdana, Arial, Helvetica, sans-serif;
+	font-size:12px;
+	color: #000000;
+    width: 1140px;
+    height: auto;
+    background-color:#ffffff;
+    margin: auto;
+    padding: 10px;
+    text-align:center;
+}
+section.h1 {
+	font-family:'Open Sans', Verdana, Arial, Helvetica, sans-serif;
+	font-size:16px;
+	color: #000000;
+}
+
+
+div.header_section {
+font-family:'Open Sans', Verdana, Arial, Helvetica, sans-serif;
+	font-size:16px;
+	color: #000000;
+
+}
+div.header_section h1{
+   	font-size:16px;
+   	font-family:'Open Sans', Verdana, Arial, Helvetica, sans-serif;
+
+}
+
+
+div.input_container {
+    width: 90%;
+    height: 600px;
+        padding-top:30px;
+            padding-bottom:30px;
+    padding-right:30px;
+    padding-left:30px;
+    background-color:#eeeeee;
+
+}
+div.input_container h1{
+   	font-size:16px;
+   	font-family:'Open Sans', Verdana, Arial, Helvetica, sans-serif;
+
+}
+div.input_container input{
+   	font-size:16px;
+   	font-family:'Open Sans', Verdana, Arial, Helvetica, sans-serif;
+
+}
+div.input_container button{
+   	font-size:14px;
+   	font-family:'Open Sans', Verdana, Arial, Helvetica, sans-serif;
+ 	border:1px solid black;
+    padding:5px;
+    background-color:#eeeeff;
+}
+
+
+
+div.response_container {
+   
+   border:1px solid black;
+     padding-top:30px;
+            padding-bottom:30px;
+    padding-right:30px;
+    padding-left:30px;
+    height: 600px;
+    background-color:#eeeeee;
+}
+div.response_container h1{
+   	font-size:14px;
+   	font-family:'Open Sans', Verdana, Arial, Helvetica, sans-serif;
+
+}
+div.response_container textarea{
+   	font-size:8pt;
+   	font-family:'courier';
+
+}
+
+
+div.documents_container {
+   border:1px solid black;
+     padding-top:30px;
+            padding-bottom:30px;
+    padding-right:30px;
+    padding-left:30px;
+    height: 600px;
+    background-color:#eeeeee;
+
+}
+div.documents_container h1{
+   	font-size:14px;
+   	font-family:'Open Sans', Verdana, Arial, Helvetica, sans-serif;
+
+}
+
+
+
+table.example_layout{
+
+font-family:'Open Sans', Verdana, Arial, Helvetica, sans-serif;
+font-size:16px;
+vertical-align:top;
+cellpadding:20px; 
+cellspacing:20px;
+border-collapse:collapse;
+width:1140px;
+height:auto;
+margin-left:0px;
+}
+table.example_layout td{
+padding-right:30px;
+padding:30px;
+vertical-align:top;
+text-align:top;
+width:50%;
+background-color:#ffffff;
+}
+table.example_layout textarea{
+font-size:16px;
+vertical-align:top;
+text-align:top;
+width:100%;
+background-color:#ffffff;
+}
