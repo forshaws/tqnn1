@@ -1,11 +1,11 @@
 # README #
 
-This README would normally document whatever steps are necessary to get your application up and running.
+The TQNN API is a suite of thin client functions and example that allow TQNN owners to access API functions from LAMP systems.
 
 ### What is this repository for? ###
 
-* Quick summary
-* Version
+* Installing basic TQNN auth API function on a PHP/LAMP server
+* Version 1
 * [Learn Markdown](https://bitbucket.org/tutorials/markdowndemo)
 
 ### How do I get set up? ###
