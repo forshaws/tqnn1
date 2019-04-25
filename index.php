@@ -14,7 +14,11 @@ Author Scot D Forshaw
 <head>
 </head>
 <body>
-<a href="tqnn_v1_api_sdk/examples/registerID.html?">registerID</a> | <a href="tqnn_v1_api_sdk/examples/authID.html?">authID</a> | <a href="tqnn_v1_api_sdk/examples/updateID.html?">updateID</a> | <a href="tqnn_v1_api_sdk/examples/revokeID.html?">revokeID</a>
 <h1>TQNN 1 SDK Examples</h1>
+<p><a href="tqnn_v1_api_sdk/examples/registerID.html?">registerID</a></p>
+<p><a href="tqnn_v1_api_sdk/examples/authID.html?">authID</a></p>
+<p><a href="tqnn_v1_api_sdk/examples/updateID.html?">updateID</a></p>
+<p><a href="tqnn_v1_api_sdk/examples/revokeID.html?">revokeID</a></p>
+
 </body>
 </html>
