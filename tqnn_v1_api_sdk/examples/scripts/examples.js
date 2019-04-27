@@ -3,8 +3,10 @@ function authIDExample(){
 	var username=document.getElementById('username').value;
 	var password=document.getElementById('password').value;
 	
-	
-	
+	if(!window.navigator.onLine){
+		alert("Cannot connect to the Internet. Check your connection and try again");
+		return false;		
+	}
 	
 	document.getElementById('action_button').disabled=true;
 	
@@ -63,6 +65,11 @@ function registerIDExample(){
 	var username=document.getElementById('username').value;
 	var password=document.getElementById('password').value;
 	
+	if(!window.navigator.onLine){
+		alert("Cannot connect to the Internet. Check your connection and try again");
+		return false;		
+	}
+	
 	prc=1;
 	
 	document.getElementById('action_button').disabled=true;
@@ -110,6 +117,11 @@ function updateIDExample(){
 	var password=document.getElementById('password').value;
 	var new_password=document.getElementById('new_password').value;
 	
+	if(!window.navigator.onLine){
+		alert("Cannot connect to the Internet. Check your connection and try again");
+		return false;		
+	}
+	
 	prc=1;
 	
 	document.getElementById('action_button').disabled=true;
@@ -155,6 +167,11 @@ function revokeIDExample(){
 
 	var username=document.getElementById('username').value;
 	var password=document.getElementById('password').value;
+	
+	if(!window.navigator.onLine){
+		alert("Cannot connect to the Internet. Check your connection and try again");
+		return false;		
+	}
 	
 	prc=1;
 	
