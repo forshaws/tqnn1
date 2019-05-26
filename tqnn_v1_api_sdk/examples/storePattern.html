@@ -2,7 +2,7 @@
 <head>
 <link href="styles/style.css?v=444q" rel="stylesheet">
 <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
-<script src="scripts/examples.js?v=224fe3f4q4q" type="text/javascript"></script>
+<script src="scripts/examples.js?v=224fsfes34uq4q" type="text/javascript"></script>
 </head>
 <body>
 
@@ -11,10 +11,9 @@
 <section>
 
 <div class="header_section">
-	<h1>authID example</h1>
-	<p>Authenticate a registered user via TQNN API authID SDK call and javascript.</p>
-	<p>authID will return the likelihood of the users credentials being valid</p>
-	<p>This example uses the TQNN thin client on your application server side.</p>
+	<h1>storePattern example</h1>
+	<p>A simple example of how to store a pattern in TQNN.</p>
+
 </div>
 
 <table class="example_layout">
@@ -23,10 +22,10 @@
 
 	<div class="input_container">
 		<h1>Input</h1>
-		<p>Enter a username and password and press "authenticate" to send a request to TQNN to authenticate the credentials.</p>
-		<input type="text" id="username" placeholder="username"><br>
-		<input type="text" id="password" placeholder="password"><br>
-		<button id="action_button" onclick="authIDExample();">authenticate</button>
+		<p>Enter a 16 byte pattern to store in TQNN</p>
+		<input type="text" id="pattern" placeholder="pattern 16 bytes"><br>
+
+		<button id="action_button" onclick="storePatternExample();">store</button>
 	</div>
 </td>
 <td>
@@ -42,7 +41,7 @@
 <td colspan="2">
 <div class="documents_container">
 		<h1>Documentation</h1>
-		<iframe src="https://api.toridion.com/v1/registerID?docs" width="100%" height="500px"></iframe>
+		<iframe src="https://api.toridion.com/v1/storePattern?docs" width="100%" height="500px"></iframe>
 	</div>
 </td>
 </tr>
