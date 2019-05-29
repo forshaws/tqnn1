@@ -7,12 +7,12 @@ Author: Scott D Forshaw :: Visicom Scientific Software :: Copyright 2017 ARR
 Twitter: @softwareguru1
 email: scot.forshaw@gmail.com
 
-filename: examples/registerID.php
-description: Thin client script that communicates with the Toridion registerID API
+filename: examples/storPattern.php
+description: Thin client script that communicates with the Toridion storePattern API
 
 
 */
-
+include("api-config.php");
 $tqnnAPIKEY="123456789";
 $tqnnAPISECRET="123456789S";
 
@@ -34,7 +34,8 @@ $fields_string="";
 foreach($field as $key=>$value) { $fields_string .= $key.'='.$value.'&'; }
 rtrim($fields_string, '&');
 
-$url = "https://api.toridion.com/v1/storePattern"; 
+
+$url = "$apipath/v1/storePattern"; 
 
 //open connection
 $ch = curl_init();
