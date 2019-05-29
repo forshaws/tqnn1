@@ -1,3 +1,3 @@
 <?php
-$apipath="https://api.toridion.com";
+$apipath="https://api.toridion.com"; //test ignore
 ?>
