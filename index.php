@@ -20,6 +20,9 @@ Author Scot D Forshaw
 <p><a href="tqnn_v1_api_sdk/examples/authID.html?">authID</a></p>
 <p><a href="tqnn_v1_api_sdk/examples/updateID.html?">updateID</a></p>
 <p><a href="tqnn_v1_api_sdk/examples/revokeID.html?">revokeID</a></p>
+<p><a href="tqnn_v1_api_sdk/examples/storePattern.html?">storePattern</a></p>
+<p><a href="tqnn_v1_api_sdk/examples/searchPattern.html?">searchPattern</a></p>
+
 
 </body>
 </html>

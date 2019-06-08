@@ -12,7 +12,7 @@ description: Thin client script that communicates with the Toridion authID API
 
 
 */
-
+include("api-config.php");
 $tqnnAPIKEY="123456789";
 $tqnnAPISECRET="123456789";
 
@@ -37,7 +37,8 @@ $fields_string="";
 foreach($field as $key=>$value) { $fields_string .= $key.'='.$value.'&'; }
 rtrim($fields_string, '&');
 
-$url = "https://api.toridion.com/v1/authID"; 
+
+$url = "$apipath/v1/authID"; 
 
 //open connection
 $ch = curl_init();
