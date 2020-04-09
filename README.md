@@ -11,7 +11,7 @@ The examples are written in PHP and JS.
 
 ### Deploy directy to IBM cloud ###
 
-[![Deploy to IBM Cloud](https://cloud.ibm.com/devops/setup/deploy/button.png)](https://cloud.ibm.com/devops/setup/deploy?repository=https://forshaws@bitbucket.org/tqnn/tqnn1.git>)
+[![Deploy to IBM Cloud](https://cloud.ibm.com/devops/setup/deploy/button.png)](https://cloud.ibm.com/devops/setup/deploy?repository=https://forshaws@bitbucket.org/tqnn/tqnn1.git)
 
 ### How do I get set up? ###
 
