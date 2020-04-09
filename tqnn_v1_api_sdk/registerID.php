@@ -12,7 +12,13 @@ description: Thin client script that communicates with the Toridion registerID A
 
 
 */
+if(file_exists("api-config.php")){
 include("api-config.php");
+}
+else{
+$apipath="https://api.toridion.com";
+}
+
 $tqnnAPIKEY="123456789";
 $tqnnAPISECRET="123456789";
 
