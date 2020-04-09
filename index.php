@@ -4,7 +4,7 @@
 /*
 filename: index.php
 Author Scot D Forshaw
-
+Copyright 2015 S D Forshaw
 */
 
 
