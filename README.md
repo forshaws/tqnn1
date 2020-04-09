@@ -9,6 +9,10 @@ The examples are written in PHP and JS.
 * Version 1.0
 * [Learn Markdown](https://bitbucket.org/tutorials/markdowndemo)
 
+### Deploy directy to IBM cloud ###
+
+[![Deploy to IBM Cloud](https://cloud.ibm.com/devops/setup/deploy/button.png)](https://cloud.ibm.com/devops/setup/deploy?repository=https://forshaws@bitbucket.org/tqnn/tqnn1.git>)
+
 ### How do I get set up? ###
 
 * Just clone the repository to a folder of choice and navigate to it with your browser
