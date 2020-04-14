@@ -353,11 +353,14 @@ font-family:'Source Sans Pro', Verdana, Arial, Helvetica, sans-serif;
 	vertical-align:top;
 	width: 97%;
     padding: 5px;
+    padding-bottom:10px;
+        padding-top:10px;
  -webkit-border-radius: 8px;
   -moz-border-radius: 8px;
   -ms-border-radius: 8px;
   -o-border-radius: 8px;
   border-radius: 8px;
+  margin-bottom:30px;
 
 }
 table.example_layout select{
@@ -369,7 +372,7 @@ font-family:'Open Sans', Verdana, Arial, Helvetica, sans-serif;
 table.example_layout button{
 font-family:'Source Sans Pro', Verdana, Arial, Helvetica, sans-serif;
 color: #ffffff;
-font-size:14px;
+font-size:34px;
 background-color:#002255;
  border:2px solid #ffffff; 
  padding-left:15px;

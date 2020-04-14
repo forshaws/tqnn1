@@ -32,14 +32,14 @@
 						<p>Enter a username and password and press "register" to send a request to TQNN to register the credentials.</p>
 						<input type="text" id="username" placeholder="username"><br>
 						<input type="text" id="password" placeholder="password"><br>
-						<button id="action_button" onclick="registerIDExample();">register</button>
+						<button id="action_button" onclick="registerIDExample(); $('#api_response_div' ).get(0).scrollIntoView();">REGISTER</button>
 					</div>
 				</td>
 			</tr>
 
 			<tr>
 				<td>
-					<div class="response_container">
+					<div id="api_response_div" class="response_container">
 						<h1>Response JSON</h1>
 						<textarea id="api_response" rows="10" cols="80"></textarea>
 					</div>

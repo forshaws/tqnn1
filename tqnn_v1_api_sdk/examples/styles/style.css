@@ -361,7 +361,7 @@ font-family:'Source Sans Pro', Verdana, Arial, Helvetica, sans-serif;
   -ms-border-radius: 8px;
   -o-border-radius: 8px;
   border-radius: 8px;
-
+ margin-bottom:30px;
 }
 table.example_layout select{
 font-family:'Open Sans', Verdana, Arial, Helvetica, sans-serif;
@@ -372,7 +372,7 @@ font-family:'Open Sans', Verdana, Arial, Helvetica, sans-serif;
 table.example_layout button{
 font-family:'Source Sans Pro', Verdana, Arial, Helvetica, sans-serif;
 color: #ffffff;
-font-size:14px;
+font-size:34px;
 background-color:#002255;
  border:2px solid #ffffff; 
  padding-left:15px;
@@ -385,6 +385,7 @@ background-color:#002255;
   -ms-border-radius: 8px;
   -o-border-radius: 8px;
   border-radius: 8px;
+  margin-bottom:30px;
 width:97%;
 }
 table.example_layout a{
