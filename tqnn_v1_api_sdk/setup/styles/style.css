@@ -338,6 +338,12 @@ table.example_layout h1{
    	font-family:'Open Sans', Verdana, Arial, Helvetica, sans-serif;
 
 }
+table.example_layout h2{
+	font-weight:600;
+   	font-size:26px;
+   	font-family:'Open Sans', Verdana, Arial, Helvetica, sans-serif;
+
+}
 table.example_layout input{
 font-family:'Source Sans Pro', Verdana, Arial, Helvetica, sans-serif;
 	font-size:34px;
