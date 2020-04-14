@@ -27,10 +27,10 @@ font-family:'Open Sans', Verdana, Arial, Helvetica, sans-serif;
   -ms-border-radius: 20px;
   -o-border-radius: 20px;
   border-radius: 20px;
-		position:fixed;
+	
 	color: #ffffff;
 	text-align:right; 
-	position:absolute;
+	position:fixed;
 	right:10px;
 	float:right;
 	padding-bottom:30px;
@@ -304,7 +304,6 @@ border:0px solid #c3c5c6;
   -o-border-radius: 20px;
   border-radius: 20px;
   padding-bottom:100px;
-  
   
 }
 table.example_layout td{

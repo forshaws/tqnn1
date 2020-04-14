@@ -1,0 +1,54 @@
+<html>
+<head>
+<link href="styles/style.css?v=444q" rel="stylesheet">
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+<script src="scripts/setup.js?v=" type="text/javascript"></script>
+</head>
+	<body onload="load_html_assets('setup');">
+
+		<header ></header>
+
+		<table class="example_layout">
+
+			<tr>
+				<td>
+					<div class="response_container">
+						<h1>Setup authID API</h1>
+						<h2>You are currently running in demo mode</h2>
+						<p>
+						This repository comes with 2 example applications that will help you quickly get started with TORIDION&trade; authID API. You can begin using the example apps right now using a demo APIKEY, 
+						but your data will not be saved.<br><br>
+						<h2>Try the examples?</h2>
+						To try the samples without setting up an APIKEY click "Examples" in the top menu. These examples use a demo APIKEY and APISECRET and will let you actually register and validate credentials on a live TORIDION&trade; authID API instance.
+						<p>Remember in demo mode <b>your data wont be saved</b> for long so do not use this for live environment or send sensitive data.<br><br>
+						<h2>Get a key</h2>
+						To create an APIKEY and APISECRET that will allow you to take advantage of the TORIDION&trade; authID API click "Get Key" in the top menu.
+						
+						</p>
+					</div>
+				</td>
+			</tr>
+			
+			<tr>
+				<td>
+					<div class="input_container">
+						<h2>Already have a key?</h2>
+						<p>If you already have a valid APIKEY and APISECRET and you wish to link this application tot he same key you can enter your credentials in the form below. This will generate your configuration files and terminate the setup wizard. </p>
+						<input type="text" id="apikey" placeholder="APIKEY"><br>
+						<input type="text" id="apisecret" placeholder="APISECRET"><br>
+						<button id="action_button" onclick="authIDExample();">CONFIGURE NOW</button>
+					</div>
+				</td>
+			</tr>
+
+		
+
+		</table>
+		
+	
+
+		<footer style="fixed-footer"></footer>
+
+	</body>
+
+</html>

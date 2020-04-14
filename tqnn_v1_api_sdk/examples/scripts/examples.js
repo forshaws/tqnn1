@@ -316,3 +316,29 @@ function storePatternExample(){
 	});
 
 }
+
+function load_html_assets(){
+
+
+	fetch("assets/html/header.html")
+	  .then(response => {
+		return response.text()
+	  })
+	  .then(data => {
+		document.querySelector("header").innerHTML = data;
+	  });
+
+
+
+
+	fetch("assets/html/footer.html")
+	  .then(response => {
+		return response.text()
+	  })
+	  .then(data => {
+		document.querySelector("footer").innerHTML = data;
+	  });
+
+
+
+}

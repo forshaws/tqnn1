@@ -2,21 +2,11 @@
 <head>
 <link href="styles/style.css?v=444q" rel="stylesheet">
 <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
-<script src="scripts/examples.js?v=224fsfes34uq4q" type="text/javascript"></script>
+<script src="scripts/examples.js?v=" type="text/javascript"></script>
 </head>
-<body>
+<body onload="load_html_assets();">
 
-<header></header>
-
-<script javascript>
-fetch("./header.html")
-  .then(response => {
-    return response.text()
-  })
-  .then(data => {
-    document.querySelector("header").innerHTML = data;
-  });
-</script>
+<header style="fixed-header"></header>
 
 <section>
 
@@ -59,6 +49,8 @@ fetch("./header.html")
 
 </table>
 </section>
+
+<footer style="fixed-footer"></footer>
 
 </body>
 </html>
