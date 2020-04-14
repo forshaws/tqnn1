@@ -244,6 +244,7 @@ font-family:'Open Sans', Verdana, Arial, Helvetica, sans-serif;
 	min-width: 200;*/
 }
 div.response_container h1{
+	font-weight:300;
    	font-size:14px;
    	font-family:'Open Sans', Verdana, Arial, Helvetica, sans-serif;
 
@@ -287,6 +288,7 @@ height:auto;
 margin-left:0px;
 */
 font-family:'Open Sans', Verdana, Arial, Helvetica, sans-serif;
+font-weight:300;
 font-size:16px;
 vertical-align:top;
 cellpadding:20px; 
@@ -333,8 +335,10 @@ background-color:#ffffff;
 
 }*/
 table.example_layout h1{
-   	font-size:16px;
-   	font-family:'Open Sans', Verdana, Arial, Helvetica, sans-serif;
+font-family:'Open Sans', Verdana, Arial, Helvetica, sans-serif;
+	font-size:36px;
+	font-weight:300;
+
 
 }
 table.example_layout input{

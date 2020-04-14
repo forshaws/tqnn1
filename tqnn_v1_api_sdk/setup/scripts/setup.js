@@ -137,3 +137,12 @@ function load_html_assets(src){
 
 
 }
+
+
+
+function getKey(){
+
+alert("To obtain a key at this time contact info@toridion.com");
+
+
+}

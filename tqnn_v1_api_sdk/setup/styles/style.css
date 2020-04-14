@@ -286,6 +286,7 @@ width:1140px;
 height:auto;
 margin-left:0px;
 */
+	font-weight:300;
 font-family:'Open Sans', Verdana, Arial, Helvetica, sans-serif;
 font-size:16px;
 vertical-align:top;
@@ -332,7 +333,8 @@ background-color:#ffffff;
 
 }*/
 table.example_layout h1{
-   	font-size:16px;
+	font-weight:300;
+   	font-size:36px;
    	font-family:'Open Sans', Verdana, Arial, Helvetica, sans-serif;
 
 }
