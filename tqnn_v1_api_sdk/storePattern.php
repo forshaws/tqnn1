@@ -12,7 +12,12 @@ description: Thin client script that communicates with the Toridion storePattern
 
 
 */
+if(file_exists("api-config.php")){
 include("api-config.php");
+}
+else{
+$apipath="https://api.toridion.com";
+}
 $tqnnAPIKEY="123456789";
 $tqnnAPISECRET="123456789S";
 
@@ -49,7 +54,7 @@ curl_setopt($ch,CURLOPT_URL, $url);
 curl_setopt($ch,CURLOPT_POST, count($field));
 curl_setopt($ch,CURLOPT_POSTFIELDS, $fields_string);
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-//curl_setopt($ch, CURLOPT_USERPWD, "wearecommit:password1!");
+//curl_setopt($ch, CURLOPT_USERPWD, "user:pass");
 //curl_setopt($ch, CURLOPT_HTTPAUTH, CURLAUTH_BASIC);
 
 //execute post
