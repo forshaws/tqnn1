@@ -6,7 +6,17 @@
 </head>
 <body>
 
-<a href="/tqnn1/">Index</a> |<a href="registerID.html?">registerID</a> | <a href="authID.html?">authID</a> | <a href="updateID.html?">updateID</a> | <a href="revokeID.html?">revokeID</a> | <a href="storePattern.html?">storePattern</a> | <a href="searchPattern.html?">searchPattern</a>
+<header></header>
+
+<script javascript>
+fetch("./header.html")
+  .then(response => {
+    return response.text()
+  })
+  .then(data => {
+    document.querySelector("header").innerHTML = data;
+  });
+</script>
 
 <section>
 
