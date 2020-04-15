@@ -2,5 +2,5 @@
 applications:
  - name: tqnn1
    random-route: true
-   memory: 64M
-   disk_quota: 64MB
+   memory: 128M
+   disk_quota: 128MB
