@@ -11,7 +11,7 @@ The examples are written in PHP and JS.
 
 ### Deploy directy to IBM cloud [recommended] ###
 
-You can install this software directly onto IBM Cloud infrastructure using a single click. This service will guide youb through creating an IBM Cloud account if you do not have one already. 
+You can install this software directly onto IBM Cloud infrastructure using a single click. This service will guide you through creating an IBM Cloud account if you do not have one already. 
 It will also create the required toolchain and pipelines.
 
 [![Deploy to IBM Cloud](https://cloud.ibm.com/devops/setup/deploy/button.png)](https://cloud.ibm.com/devops/setup/deploy?repository=https://github.com/forshaws/tqnn1.git)
