@@ -146,3 +146,24 @@ alert("To obtain a key at this time contact info@toridion.com");
 
 
 }
+
+
+
+
+function setKey(){
+
+
+
+if (confirm("You are about to configure the authID API access keys. Please check the keys are correct before pressing OK.")) {
+
+
+
+} else {
+
+
+
+  
+}
+
+
+}

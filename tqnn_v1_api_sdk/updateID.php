@@ -12,14 +12,8 @@ description: Thin client script that communicates with the Toridion uodateID API
 
 
 */
-if(file_exists("api-config.php")){
-include("api-config.php");
-}
-else{
-$apipath="https://api.toridion.com";
-}
-$tqnnAPIKEY="123456789";
-$tqnnAPISECRET="123456789";
+
+include("configAPI.php");
 
 //format a curl request and send it to the API
 date_default_timezone_set('GMT');
@@ -29,7 +23,7 @@ $user_request_id="example";
 $field = array(
 	'tqnnAPIKEY' => urlencode($tqnnAPIKEY),
 	'tqnnAPISECRET' => urlencode($tqnnAPISECRET),
-	'user_request_id' => urlencode($user_request_id),
+	'user_request_id' => urlencode(isset($_POST['user_request_id'])?$_POST['user_request_id']:"notset"),
 	'username' => urlencode(isset($_POST['username'])?$_POST['username']:""),
 	'password' => urlencode(isset($_POST['password'])?$_POST['password']:""),
 	'new_password' => urlencode(isset($_POST['new_password'])?$_POST['new_password']:""),

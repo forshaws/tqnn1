@@ -12,24 +12,13 @@ description: Thin client script that communicates with the Toridion registerID A
 
 
 */
-if(file_exists("api-config.php")){
-include("api-config.php");
-}
-else{
-$apipath="https://api.toridion.com";
-}
-$tqnnAPIKEY="123456789";
-$tqnnAPISECRET="123456789";
 
-//format a curl request and send it to the API
-date_default_timezone_set('GMT');
-$datestamp=date('Y-m-d H:i:s');
-$user_request_id="example";
+include("configAPI.php");
 
 $field = array(
 	'tqnnAPIKEY' => urlencode($tqnnAPIKEY),
 	'tqnnAPISECRET' => urlencode($tqnnAPISECRET),
-	'user_request_id' => urlencode($user_request_id),
+	'user_request_id' => urlencode(isset($_POST['user_request_id'])?$_POST['user_request_id']:"notset"),
 	'credential0' => urlencode(isset($_POST['credential0'])?$_POST['credential0']:""),
 	'credential1' => urlencode(isset($_POST['credential1'])?$_POST['credential1']:""),
 	'credential2' => urlencode(isset($_POST['credential2'])?$_POST['credential2']:""),
