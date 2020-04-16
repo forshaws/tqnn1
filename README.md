@@ -1,6 +1,6 @@
 # README #
 
-The TQNN API is a suite of thin client functions and examples for accessing Toridions TQNN authID&trade; API functions.
+The TQNN API is a suite of thin client functions and examples for accessing Toridion TQNN authID&trade; API functions.
 The examples are written in PHP and JS.  
 
 ### What is this repository for? ###
