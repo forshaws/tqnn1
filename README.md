@@ -9,7 +9,7 @@ The examples are written in PHP and JS.
 * Version 1.0 BETA
 * [Website](https://www.toridion.com/page/authid-on-ibm-cloud)
 
-### Deploy directy to IBM cloud [recommended] ###
+### Deploy directy to IBM Cloud&trade; [recommended] ###
 
 You can install this software directly onto IBM Cloud infrastructure using a single click. This service will guide you through creating an IBM Cloud account if you do not have one already. 
 It will also create the required toolchain and pipelines.
