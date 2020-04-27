@@ -24,7 +24,7 @@ It will also create the required toolchain and pipelines.
 ### How do I get set up manually? ###
 
 * Clone the repository to a folder of choice and navigate to it with your browser
-* Obtain an APIKEY and APISECTRET from Toridion directly or use the provided demo keys in the php files
+* Obtain an APIKEY and APISECRET from Toridion directly or use the provided demo keys in the php files
 * Requires access to the Toridion API
 * create a file called api-config.php in the tqnn_v1_api_sdk/ folder and enter the following:-
 
