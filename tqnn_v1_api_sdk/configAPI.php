@@ -8,7 +8,7 @@ Twitter: @softwareguru1
 email: scot.forshaw@gmail.com
 
 filename: examples/configAPI.php
-description: Thin client script that communicates with the Toridion authID API
+description: Default configuration file that is used if the setup wizard has not been run to generate customer specific APIKEY and APISECRET
 
 
 */
@@ -17,9 +17,8 @@ include("api-config.php");
 }
 else{
 $apipath="https://api.toridion.com";
-$tqnnAPIKEY="123456789";
+$tqnnAPIKEY="IBM__TNNS123456789";
 $tqnnAPISECRET="123456789";
-//$user_request_id="demo";
 }
 
 

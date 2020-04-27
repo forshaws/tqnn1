@@ -1,0 +1,64 @@
+<html>
+<head>
+<link href="styles/style.css?v=444q" rel="stylesheet">
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+<script src="scripts/setup.js?v=" type="text/javascript"></script>
+<link href="//fonts.googleapis.com/css?family=Source Sans Pro:700italic,500,700,400&amp;subset=latin,cyrillic-ext,latin-ext" rel="stylesheet" type="text/css">
+<link href="//fonts.googleapis.com/css?family=Open+Sans:300,300i,400,600,800" rel="stylesheet">
+<link href="//fonts.googleapis.com/css?family=PT Sans:700italic,500,700,400&amp;subset=latin,cyrillic-ext,latin-ext" rel="stylesheet" type="text/css">
+<link href="//fonts.googleapis.com/css?family=Montserrat:700italic,500,700,400&amp;subset=latin,cyrillic-ext,latin-ext" rel="stylesheet" type="text/css">
+</head>
+	<body onload="load_html_assets('getkey');">
+
+		<header ></header>
+
+		<table class="example_layout">
+
+			<tr>
+				<td>
+					<div class="response_container">
+						<h1>Request authID APIKEY and APISECRET</h1>
+						<p>
+						Complete the requested fields to request a new APIKEY and APISECRET from Toridion and activate your authID account.
+						
+						
+						
+						</p>
+					</div>
+				</td>
+			</tr>
+			
+			<tr>
+				<td>
+				<h2>Terms of Service</h2>
+				<iframe style="background: #FFFFFF;"  scrolling="yes" height="320px;" width="100%" src="https://api.toridion.com/docs/tos.txt"></iframe>
+				
+				<p><br><a href="https://api.toridion.com/docs/tos.txt" target="_blank">DOWNLOAD TERMS</a></p>
+				
+				<p><br><label>I Agree to the Terms of Service<input type="checkbox" name="accept_terms" id="accept_terms" value="agree"></label></p>
+				
+				</td>
+			</tr>
+
+			<tr>
+				<td>
+					<div class="input_container">
+						<h2>Required</h2>
+						<p>Note** due to the security of the authID system, it is not possible to recover the details you provide. Please ensure you know the username and password you set here and have it in a safe place 
+						otherwise you will not be able to access the system.</p>
+						<input type="text" id="username" placeholder="username"><br>
+						<input type="text" id="password" placeholder="password"><br>
+						<input type="hidden" id="user_request_id" value="registerfor key"><br>
+						<input type="text" id="dataset" placeholder="bucket - blank for default"><br>
+						<button id="action_button" onclick="getKey();">GENERATE KEYS NOW</button>
+					</div>
+				</td>
+			</tr>
+
+		</table>
+
+		<footer style="fixed-footer"></footer>
+
+	</body>
+
+</html>

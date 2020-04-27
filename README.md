@@ -1,6 +1,6 @@
 # README #
 
-The TQNN API is a suite of thin client functions and examples for accessing Toridion TQNN authID&trade; API functions.
+A suite of thin client functions and examples scripts for implementing database free data sharing and credential authentication via the Toridion TQNN authID&trade; API functions.
 The examples are written in PHP and JS.  
 
 ### What is this repository for? ###
@@ -14,7 +14,12 @@ The examples are written in PHP and JS.
 You can install this software directly onto IBM Cloud infrastructure using a single click. This service will guide you through creating an IBM Cloud account if you do not have one already. 
 It will also create the required toolchain and pipelines.
 
+* Click the Deploy to IBM Cloud
+
 [![Deploy to IBM Cloud](https://cloud.ibm.com/devops/setup/deploy/button.png)](https://cloud.ibm.com/devops/setup/deploy?repository=https://github.com/forshaws/tqnn1.git)
+
+* Once the SDK is installed on your IBM Cloud click "Get Key" in the Start/Setup menu
+* Follow the instructions on screen to configure the SDK and thin client applications
 
 ### How do I get set up manually? ###
 

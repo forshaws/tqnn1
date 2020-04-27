@@ -1,0 +1,12 @@
+{"function":"getKey","apipath":"https:\/\/api.toridion.com\/v1","user_request_id":"registerforkey","request_id":1587977958,"bucket":"test","tib_written":null,"time_used":null,"billing_units":null,"APIKEY":"a89260a6-6a66-42a7-ac11-1a9db0308c01","APISECRET":"1e2230cf-f464-431f-b41b-041da316ec82","tqnn_response":"New APIKEY and bucket created successfully"}
+
+
+Your API access keys we created. Please write the following details down and keep the safe. A copy of the keys are stored locally on this server in the file api-config.php
+
+
+APIKEY:1fff73da-afcd-4ab8-96fe-100492d4fc04
+APISECRET:8a6a47e6-f38d-4a5a-8f4f-29cbfac9ee70
+
+
+
+

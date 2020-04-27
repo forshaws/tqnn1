@@ -1,8 +1,23 @@
+/*
+
+Author: Scott D Forshaw :: Visicom Scientific Software :: Copyright 2017 ARR
+
+Twitter: @softwareguru1
+email: scot.forshaw@gmail.com
+
+filename: examples/scripts/examples.js
+description: Simple JS wrappers for calling TQNN API basic auth and validation functions
+
+
+*/
+
 function authIDExample(){
 
 	var username=document.getElementById('username').value;
 	var password=document.getElementById('password').value;
 	var user_request_id=document.getElementById('user_request_id').value;
+	var dataset=document.getElementById('dataset').value;
+	
 	if(!window.navigator.onLine){
 		alert("Cannot connect to the Internet. Check your connection and try again");
 		return false;		
@@ -12,10 +27,9 @@ function authIDExample(){
 	
 	prc=1;
 
-	$.post("../authID.php", { username:username, password:password, multihash:1, dataset:"cache", returnauthtoken:1, user_request_id:user_request_id},
+	$.post("../authID.php", { username:username, password:password, multihash:1, dataset:dataset, returnauthtoken:1, user_request_id:user_request_id},
 	function(data,status) {
 	
-	// alert(data);
 
 		var json=JSON.parse(data);
 
@@ -65,6 +79,7 @@ function registerIDExample(){
 	var username=document.getElementById('username').value;
 	var password=document.getElementById('password').value;
 	var user_request_id=document.getElementById('user_request_id').value;
+	var dataset=document.getElementById('dataset').value;
 	
 	if(!window.navigator.onLine){
 		alert("Cannot connect to the Internet. Check your connection and try again");
@@ -75,12 +90,7 @@ function registerIDExample(){
 	
 	document.getElementById('action_button').disabled=true;
 	
-	/*
-	An alternative to straightforward registration is to first test if the account already exists
-	if it does do not try to register it again.
-	*/
-
-	$.post("../registerID.php", { credential0:username, credential1:password, multihash:1, dataset:"cache", returnauthtoken:1, user_request_id:user_request_id},
+	$.post("../registerID.php", { credential0:username, credential1:password, multihash:1, dataset:dataset, returnauthtoken:1, user_request_id:user_request_id},
 	function(data,status) {
 	
 		var json=JSON.parse(data);
@@ -118,6 +128,7 @@ function updateIDExample(){
 	var password=document.getElementById('password').value;
 	var new_password=document.getElementById('new_password').value;
 	var user_request_id=document.getElementById('user_request_id').value;
+	var dataset=document.getElementById('dataset').value;
 	
 	if(!window.navigator.onLine){
 		alert("Cannot connect to the Internet. Check your connection and try again");
@@ -128,12 +139,7 @@ function updateIDExample(){
 	
 	document.getElementById('action_button').disabled=true;
 	
-	/*
-	An alternative to straightforward registration is to first test if the account already exists
-	if it does do not try to register it again.
-	*/
-
-	$.post("../updateID.php", { username:username, password:password, new_password:new_password,multihash:1, dataset:"cache", returnauthtoken:1, user_request_id:user_request_id},
+	$.post("../updateID.php", { username:username, password:password, new_password:new_password,multihash:1, dataset:dataset, returnauthtoken:1, user_request_id:user_request_id},
 	function(data,status) {
 	
 		var json=JSON.parse(data);
@@ -170,6 +176,7 @@ function revokeIDExample(){
 	var username=document.getElementById('username').value;
 	var password=document.getElementById('password').value;
 	var user_request_id=document.getElementById('user_request_id').value;
+	var dataset=document.getElementById('dataset').value;
 	
 	if(!window.navigator.onLine){
 		alert("Cannot connect to the Internet. Check your connection and try again");
@@ -180,12 +187,7 @@ function revokeIDExample(){
 	
 	document.getElementById('action_button').disabled=true;
 	
-	/*
-	An alternative to straightforward registration is to first test if the account already exists
-	if it does do not try to register it again.
-	*/
-
-	$.post("../revokeID.php", { username:username, password:password, multihash:1, dataset:"cache", returnauthtoken:1, user_request_id:user_request_id},
+	$.post("../revokeID.php", { username:username, password:password, multihash:1, dataset:dataset, returnauthtoken:1, user_request_id:user_request_id},
 	function(data,status) {
 	
 		var json=JSON.parse(data);
@@ -222,7 +224,8 @@ function searchPatternExample(){
 	var pattern=document.getElementById('pattern').value;
 	var return_filelist=document.getElementById('filelist').checked;
 	var user_request_id=document.getElementById('user_request_id').value;
-		
+	var dataset=document.getElementById('dataset').value;	
+	
 	var filelist=0;
 	if(return_filelist){
 	var filelist=1;
@@ -237,10 +240,9 @@ function searchPatternExample(){
 	
 	prc=1;
 
-	$.post("../searchPattern.php", { pattern:pattern, filelist:filelist, dataset:"cache", user_request_id:user_request_id},
+	$.post("../searchPattern.php", { pattern:pattern, filelist:filelist, dataset:dataset, user_request_id:user_request_id},
 	function(data,status) {
 	
-		//alert(data);
 		var json=JSON.parse(data);
 
 		if(json.error_message != "" && json.error_message != undefined  ){
@@ -274,7 +276,7 @@ function storePatternExample(){
 
 	var pattern=document.getElementById('pattern').value;
 	var user_request_id=document.getElementById('user_request_id').value;
-
+    var dataset=document.getElementById('dataset').value;
 	
 	if(!window.navigator.onLine){
 		alert("Cannot connect to the Internet. Check your connection and try again");
@@ -285,15 +287,9 @@ function storePatternExample(){
 	
 	document.getElementById('action_button').disabled=true;
 	
-	/*
-	An alternative to straightforward registration is to first test if the account already exists
-	if it does do not try to register it again.
-	*/
-
-	$.post("../storePattern.php",  { pattern:pattern, dataset:"cache", user_request_id:user_request_id},
+	$.post("../storePattern.php",  { pattern:pattern, dataset:dataset, user_request_id:user_request_id},
 	function(data,status) {
 	
-		
 		var json=JSON.parse(data);
 
 		if(json.error_message != "" && json.error_message != undefined  ){
@@ -325,13 +321,21 @@ function storePatternExample(){
 
 function load_html_assets(){
 
+var unix = Math.round(+new Date()/1000);
 
-	fetch("assets/html/header.html")
+
+	fetch("assets/html/header.html?v="+unix+"")
 	  .then(response => {
 		return response.text()
 	  })
 	  .then(data => {
 		document.querySelector("header").innerHTML = data;
+		var config=readCookie("CONFIGPRESENT");
+
+		if(config=="1"){
+		$("#setuplink").hide();
+		}
+		
 	  });
 
 
@@ -347,4 +351,13 @@ function load_html_assets(){
 
 
 
+
+
+
+
+
+}
+
+function readCookie(name) {
+    return (name = new RegExp('(?:^|;\\s*)' + ('' + name).replace(/[-[\]{}()*+?.,\\^$|#\s]/g, '\\$&') + '=([^;]*)').exec(document.cookie)) && name[1];
 }
