@@ -83,7 +83,7 @@ function getKey(){
 			
 				case "APIKEY_CREATE_OK":
 					alert("Your API access keys we created. Please write the following details down and keep the safe. A copy of the keys are stored locally on this server in the file api-config.php\n\n\nAPIKEY:"+json.APIKEY+"\nAPISECRET:"+json.APISECRET+"");
-					document.location.href='/tqnn1';
+					document.location.href='/';
 				break;
 			
 				case "APIKEY_CREATE_FAILED":
