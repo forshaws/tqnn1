@@ -119,15 +119,71 @@ function setKey(){
 
 
 
-if (confirm("You are about to configure the authID API access keys. Please check the keys are correct before pressing OK.")) {
+	if (confirm("You are about to configure the authID API access keys. Please check the keys are correct before pressing OK.")) {
 
-return false;
+	
+		var apikey=document.getElementById('apikey').value;
+		var apisecret=document.getElementById('apisecret').value;
+		
+	
+		if(!window.navigator.onLine){
+			alert("Cannot connect to the Internet. Check your connection and try again");
+			return false;		
+		}
+	
+		document.getElementById('action_button').disabled=true;
+	
+		prc=1;
 
-} else {
+		$.post("setKey.php", { apikey:apikey, apisecret:apisecret },
+		function(data,status) {
+	
+			var json=JSON.parse(data);
 
+			if(json.error_message != "" && json.error_message != undefined  ){
+		
+				var str = JSON.stringify(json, null, 2);
+				document.getElementById('api_response').value=str;
+				return;
+			
+			}
+			else{
 
+				var str = JSON.stringify(json, null, 2);
+				
+				switch(json.tqnn_response){
+			
+				case "APIKEY_CREATE_OK":
+					alert("Your API access keys we created. Please write the following details down and keep the safe. A copy of the keys are stored locally on this server in the file api-config.php\n\n\nAPIKEY:"+json.apikey+"\nAPISECRET:"+json.apisecret+"");
+					document.location.href='/';
+				break;
+			
+				case "APIKEY_CREATE_FAILED":
+					alert("There was a problem creating your APIKEY and APISECRET. Try again or contact support if the problem continues.");
+				break;
+			
+				}
+			
+					
+			}
 
+		}).done(function() {
+			prc=0;
+			document.getElementById('action_button').disabled=false;
   
+		  }).error(function() {
+			prc=0;
+		
+			document.getElementById('action_button').disabled=false;
+
+		});
+
+	
+
+	} else {
+
+			return false;
+	
 }
 
 
