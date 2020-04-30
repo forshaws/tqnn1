@@ -14,9 +14,9 @@ This can then be appended to any javascript or css file as a parameter to change
 */
 
 
-$hash1=hash('sha256',file_get_contents("examples.js"));
+$hash1=hash('sha256',file_get_contents("scripts/examples.js"));
+$hash2=hash('sha256',file_get_contents("styles/style.css"));
 
-
-echo hash('sha256',"$hash1");
+echo hash('sha256',"$hash1$hash2");
 
 ?>

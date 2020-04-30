@@ -1,8 +1,12 @@
+<?php include("../configAPI.php");?>
 <html>
 <head>
-<link href="styles/style.css?v=444q" rel="stylesheet">
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+<meta http-equiv="Pragma" content="no-cache" />
+<meta http-equiv="Expires" content="0" />
+<link href="styles/style.css?v=<?php include('version_tracker.php');?>" rel="stylesheet">
 <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
-<script src="scripts/setup.js?v=" type="text/javascript"></script>
+<script src="scripts/setup.js?v=<?php include('version_tracker.php');?>" type="text/javascript"></script>
 <link href="//fonts.googleapis.com/css?family=Source Sans Pro:700italic,500,700,400&amp;subset=latin,cyrillic-ext,latin-ext" rel="stylesheet" type="text/css">
 <link href="//fonts.googleapis.com/css?family=Open+Sans:300,300i,400,600,800" rel="stylesheet">
 <link href="//fonts.googleapis.com/css?family=PT Sans:700italic,500,700,400&amp;subset=latin,cyrillic-ext,latin-ext" rel="stylesheet" type="text/css">
@@ -17,11 +21,10 @@
 			<tr>
 				<td>
 					<div class="response_container">
-						<h1>Setup authID API [Beta] 1.0.01</h1>
-						<h2>You are currently running in demo mode</h2>
+						<h1>Setup authID API <?php echo $version;?></h1>
+						<h2>You are currently running in <?php echo $mode;?> mode</h2>
 						<p>
-						This repository comes with 2 example applications that will help you quickly get started with TORIDION&trade; authID API. You can try the example apps right now using the pre-configured demo APIKEY and APISECRET, 
-						but your data will not be saved.<br><br>
+						This repository comes with 2 example applications that will help you quickly get started with TORIDION authID&trade; API. You can try the example apps right now using the pre-configured demo APIKEY and APISECRET.<br><br>
 						<h2>Try the examples?</h2>
 						To try the samples without setting up an APIKEY click "Examples" in the top menu. These examples use a demo APIKEY and APISECRET and will let you actually register and validate credentials on a live TORIDION&trade; authID API instance.
 						<p>Remember in demo mode <b>your data wont be saved</b> for long so do not use this for live environment or send sensitive data.<br><br>
@@ -36,7 +39,7 @@
 				<td>
 					<div class="input_container">
 						<h2>Already have a key?</h2>
-						<p>If you already have a valid APIKEY and APISECRET and you wish to link this application to the same key you can enter your credentials in the form below. This will generate your configuration files and terminate the setup wizard.
+						<p>If you already have a valid APIKEY and APISECRET and you wish to link this installation to the same key you can enter your credentials in the form below. This will generate your configuration files and terminate the setup wizard.
 						Once configured, the setup wizard will terminate and you will be able to run the examples using your own keys. </p>
 						<input type="text" id="apikey" placeholder="APIKEY"><br>
 						<input type="text" id="apisecret" placeholder="APISECRET"><br>

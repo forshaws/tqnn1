@@ -13,16 +13,41 @@ description: Default configuration file that is used if the setup wizard has not
 
 */
 if(file_exists("api-config.php")){
+
+
+
 include("api-config.php");
+$mode="live";
+
+
 }
 else{
-$apipath="https://api.toridion.com";
-$tqnnAPIKEY="IBM__TNNS123456789";
-$tqnnAPISECRET="123456789";
+
+
+if(file_exists("../api-config.php")){
+
+$mode="live";
+
+
+}else{
+
+
+
+		$mode="demo";
+		$apipath="https://api.toridion.com";
+		$tqnnAPIKEY="IBM__TNNS123456789";
+		$tqnnAPISECRET="123456789";
+	}
+
+
+
+
 }
 
 
 date_default_timezone_set('GMT');
 $datestamp=date('Y-m-d H:i:s');
+
+$version="1.0.2 Beta";
 
 ?>

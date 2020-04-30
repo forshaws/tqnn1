@@ -8,7 +8,7 @@ email: scot.forshaw@gmail.com
 filename: setup/scripts/setup.js
 description: JS wrappers for TQNN API setup and configuration functions
 
-
+version 1.0.1
 */
 
 function load_html_assets(src){

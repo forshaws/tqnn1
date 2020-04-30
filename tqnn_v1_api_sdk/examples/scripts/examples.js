@@ -8,7 +8,7 @@ email: scot.forshaw@gmail.com
 filename: examples/scripts/examples.js
 description: Simple JS wrappers for calling TQNN API basic auth and validation functions
 
-
+version 1.0.1
 */
 
 function authIDExample(){

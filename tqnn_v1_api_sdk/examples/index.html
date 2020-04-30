@@ -1,8 +1,12 @@
+<?php include("../configAPI.php");?>
 <html>
 <head>
-<link href="styles/style.css?v=444q" rel="stylesheet">
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+<meta http-equiv="Pragma" content="no-cache" />
+<meta http-equiv="Expires" content="0" />
+<link href="styles/style.css?v=<?php include('version_tracker.php');?>" rel="stylesheet">
 <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
-<script src="scripts/examples.js?v=" type="text/javascript"></script>
+<script src="scripts/examples.js?v=<?php include('version_tracker.php');?>" type="text/javascript"></script>
 <link href="//fonts.googleapis.com/css?family=Source Sans Pro:700italic,500,700,400&amp;subset=latin,cyrillic-ext,latin-ext" rel="stylesheet" type="text/css">
 <link href="//fonts.googleapis.com/css?family=Open+Sans:300,300i,400,600,800" rel="stylesheet">
 <link href="//fonts.googleapis.com/css?family=PT Sans:700italic,500,700,400&amp;subset=latin,cyrillic-ext,latin-ext" rel="stylesheet" type="text/css">
@@ -20,7 +24,7 @@
 						<h1>TORIDION&trade; authID API Examples</h1>
 						<h2>Training and Validation Functions authID and registerID</h2>
 
-			
+								
 								<p>JS based applications that perform the minimum basic tasks of training/registration and validation on TQNN authAPI&trade; system. If you have not yet configured your SDK/API with valid APIKEY and APISECRET 
 								settings then these examples will use default demonstration keys. Although the examples will work, the data stored may be deleted without warning and these examples should never be used for any commercial
 								deployment.</p>
@@ -29,6 +33,8 @@
 								<li style="cursor:hand"onclick="document.location.href='registerID.html?';">Train TQNN with new credentials/data [ <u>registerID</u> ]</li>
 								<li style="cursor:hand"onclick="document.location.href='authID.html?';">Validate presented credentials/data with the current training set [ <u>authID</u> ]</li>
 								</ul>
+								
+								<p>You are running in <b>[<?php echo $mode;?> mode]</b></p>
 							
 
 					</div>
