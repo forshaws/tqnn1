@@ -1,25 +1,30 @@
 # README #
 
-A suite of thin client functions and examples scripts for implementing database free data sharing and credential authentication via the Toridion TQNN authID&trade; API functions.
+Build a high performance Data Faric for the sharing and validation of critical data using TORIDION TQNN&trade; Machine Learning authID&trade; API suite. This application provides a suite of thin client functions and examples scripts for implementing database free data sharing and identity validation via the Toridion TQNN authID&trade; API functions.
+
 The examples are written in PHP and JS.  
+For more details about authID&trade; and further reading see our [Website](https://www.toridion.com/page/Toridion-APi).
 
 ### What is this repository for? ###
 
-* Installing basic TQNN auth API function on a PHP stack
-* Version 1.0 BETA
-* [Website](https://www.toridion.com/page/authid-on-ibm-cloud)
+* Installing basic TQNN&trade; authID&trade; API functions on a PHP stack
+* Version 1.0.2 BETA
+* For information about installing authID&trade; on IBM Cloud&reg; see our [Website](https://www.toridion.com/page/authid-on-ibm-cloud)
 
 ### Deploy directy to IBM Cloud&trade; [recommended] ###
 
 You can install this software directly onto IBM Cloud infrastructure using a single click. This service will guide you through creating an IBM Cloud account if you do not have one already. 
-It will also create the required toolchain and pipelines.
+It will also create the required toolchain and pipelines and install all PHP stack requirements. At the end of the process you will have launched a fully configured TQNN Data Fabric end point with example applications
 
 * Click the Deploy to IBM Cloud
 
 [![Deploy to IBM Cloud](https://cloud.ibm.com/devops/setup/deploy/button.png)](https://cloud.ibm.com/devops/setup/deploy?repository=https://github.com/forshaws/tqnn1.git)
 
-* Once the SDK is installed on your IBM Cloud click "Get Key" in the Start/Setup menu
+* Once the SDK is installed on your IBM Cloud&reg; click "Get Key" in the Start/Setup menu
 * Follow the instructions on screen to configure the SDK and thin client applications
+
+### Existing Users ###
+If you are an existing user with valid APIKEY credentials and wish to simply spin up a new client application using existing keys and buckets you an use this repository. Simply, clone the application or spin up on IBM Cloud&reg; as above. From the main screen choose the section "Already have a Key?". Here you can enter your pre existing keys to configure the application. 
 
 ### How do I get set up manually? ###
 
