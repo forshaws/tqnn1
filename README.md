@@ -9,7 +9,7 @@ For more details about authID&trade; and further reading see our [Website](https
 
 * Installing basic TQNN&trade; authID&trade; API functions on a PHP stack
 * Version 1.0.2 BETA
-* For information about installing authID&trade; in IBM CLoud&reg; see our [Website](https://www.toridion.com/page/authid-on-ibm-cloud)
+* For information about installing authID&trade; on IBM Cloud&reg; see our [Website](https://www.toridion.com/page/authid-on-ibm-cloud)
 
 ### Deploy directy to IBM Cloud&trade; [recommended] ###
 
