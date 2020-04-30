@@ -3,13 +3,13 @@
 Build a high performance Data Faric for the sharing and validation of critical data using TORIDION TQNN&trade; Machine Learning authID&trade; API suite. This application provides a suite of thin client functions and examples scripts for implementing database free data sharing and identity validation via the Toridion TQNN authID&trade; API functions.
 
 The examples are written in PHP and JS.  
-For more deatils and further reading see our [website].(https://www.toridion.com/page/Toridion-APi)
+For more details about authID&trade; and further reading see our [Website](https://www.toridion.com/page/Toridion-APi).
 
 ### What is this repository for? ###
 
 * Installing basic TQNN&trade; authID&trade; API functions on a PHP stack
 * Version 1.0.2 BETA
-* [Website](https://www.toridion.com/page/authid-on-ibm-cloud)
+* For information about installing authID&trade; in IBM CLoud&reg; see our [Website](https://www.toridion.com/page/authid-on-ibm-cloud)
 
 ### Deploy directy to IBM Cloud&trade; [recommended] ###
 
