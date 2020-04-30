@@ -3,7 +3,7 @@
 Build a high performance Data Faric for the sharing and validation of critical data using TORIDION TQNN&trade; Machine Learning authID&trade; API suite. This application provides a suite of thin client functions and examples scripts for implementing database free data sharing and identity validation via the Toridion TQNN authID&trade; API functions.
 
 The examples are written in PHP and JS.  
-For more deatils and further reading see [website](https://www.toridion.com/page/Toridion-APi)
+For more deatils and further reading see our [website].(https://www.toridion.com/page/Toridion-APi)
 
 ### What is this repository for? ###
 
@@ -24,7 +24,7 @@ It will also create the required toolchain and pipelines and install all PHP sta
 * Follow the instructions on screen to configure the SDK and thin client applications
 
 ### Existing Users ###
-Clone the application or spin up on IBM Cloud&reg; as above. From the main screen choose the section "Already have a Key?". Here you can enter your pre existing keys to configure the application. 
+If you are an existing user with valid APIKEY credentials and wish to simply spin up a new client application using existing keys and buckets you an use this repository. Simply, clone the application or spin up on IBM Cloud&reg; as above. From the main screen choose the section "Already have a Key?". Here you can enter your pre existing keys to configure the application. 
 
 ### How do I get set up manually? ###
 
