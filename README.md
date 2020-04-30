@@ -1,6 +1,6 @@
 # README #
 
-Build a high performance Data Faric for the sharing and validation of critical data using TORIDION TQNN&trade; Machine Learning authID&trade API suite. This application provides a suite of thin client functions and examples scripts for implementing database free data sharing and credential authentication via the Toridion TQNN authID&trade; API functions.
+Build a high performance Data Faric for the sharing and validation of critical data using TORIDION TQNN&trade; Machine Learning authID&trade; API suite. This application provides a suite of thin client functions and examples scripts for implementing database free data sharing and credential authentication via the Toridion TQNN authID&trade; API functions.
 
 The examples are written in PHP and JS.  
 
