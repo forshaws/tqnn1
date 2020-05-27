@@ -12,10 +12,17 @@ description: automatically generates an api-config.php file using provided
 
 */
 
+//determin the new APIPATH if passed
+
 
 $apikeytemp=$_POST['apikey'];
 $apisecrettemp=$_POST['apisecret'];
-$configfile="<?php\n\$apipath=\"https://api.toridion.com\";\n\$tqnnAPIKEY=\"$apikeytemp\";\n\$tqnnAPISECRET=\"$apisecrettemp\";\n?>";
+$selectedapipath=$_POST['selectedapipath'];
+
+	
+						
+						
+$configfile="<?php\n\$apipath=\"$selectedapipath\";\n\$tqnnAPIKEY=\"$apikeytemp\";\n\$tqnnAPISECRET=\"$apisecrettemp\";\n?>";
 
 $fp=fopen("../api-config.php","w+");
 fwrite($fp,$configfile,strlen($configfile));

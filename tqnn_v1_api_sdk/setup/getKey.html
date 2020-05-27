@@ -51,6 +51,19 @@
 						otherwise you will not be able to access the system.</p>
 						<input type="text" id="username" placeholder="username"><br>
 						<input type="text" id="password" placeholder="password"><br>
+						<h2>Choose API Endpoint 2</h2>
+						
+						<p>Select an API endpoint from the list provided - default is TORIDION data center (UK).</p>
+						
+						
+						<select id="selectedapipathselector" onchange="document.getElementById('selectedapipath').value=''; if( this.value == 'custom'){$('#selectedapipath').show(); }else{$('#selectedapipath').hide(); document.getElementById('selectedapipath').value=this.value;}">
+							<option value="https://api.toridion.com" selected>TORIDION (UK)</option>
+							<option value="http://52.117.13.31">IBM PowerAI (Dallas)</option>
+							<option value="custom">Custom</option>
+						</select><br>
+						
+						
+						<input type="text" id="selectedapipath"  placeholder="API ENDPOINT" style="display:none;">
 						<input type="hidden" id="user_request_id" value="registerfor key"><br>
 						<input type="text" id="dataset" placeholder="bucket - blank for default"><br>
 						<button id="action_button" onclick="getKey();">GENERATE KEYS NOW</button>

@@ -21,6 +21,7 @@ $field = array(
 	'user_request_id' => urlencode(isset($_POST['user_request_id'])?$_POST['user_request_id']:"notset"),
 	'username' => urlencode(isset($_POST['username'])?$_POST['username']:""),
 	'password' => urlencode(isset($_POST['password'])?$_POST['password']:""),
+	'selectedapipath' => urlencode(isset($_POST['selectedapipath'])?$_POST['selectedapipath']:""),
 	'multihash' => urlencode(isset($_POST['multihash'])?$_POST['multihash']:""),
 	'returnauthtoken' => urlencode(isset($_POST['returnauthtoken'])?$_POST['returnauthtoken']:""),
 	'dataset' => urlencode(isset($_POST['dataset'])?$_POST['dataset']:""),
@@ -32,7 +33,18 @@ foreach($field as $key=>$value) { $fields_string .= $key.'='.$value.'&'; }
 rtrim($fields_string, '&');
 
 
+$selectedapipathtemp=$_POST['selectedapipath']; //save the users selected APIPATH
+
+
+if($selectedapipathtemp != $apipath){
+$url = "$selectedapipathtemp/v1/getKey"; 
+$apipath=$selectedapipathtemp;
+}
+else{
 $url = "$apipath/v1/getKey"; 
+}
+
+
 
 //open connection
 $ch = curl_init();
@@ -64,7 +76,7 @@ $json_temp=json_decode($json, true);
 
 $apikeytemp=$json_temp['APIKEY'];
 $apisecrettemp=$json_temp['APISECRET'];
-$configfile="<?php\n\$apipath=\"https://api.toridion.com\";\n\$tqnnAPIKEY=\"$apikeytemp\";\n\$tqnnAPISECRET=\"$apisecrettemp\";\n?>";
+$configfile="<?php\n\$apipath=\"$apipath\";\n\$tqnnAPIKEY=\"$apikeytemp\";\n\$tqnnAPISECRET=\"$apisecrettemp\";\n?>";
 
 $fp=fopen("../api-config.php","w+");
 fwrite($fp,$configfile,strlen($configfile));
