@@ -54,12 +54,21 @@ function getKey(){
 		var dataset=document.getElementById('dataset').value;
 		var selectedapipath=document.getElementById('selectedapipath').value;
 		
+		
+		if ((selectedapipath=='' || selectedapipath==null) &&  document.getElementById('selectedapipathselector').value=="https://api.toridion.com") {
+		
+			selectedapipath="https://api.toridion.com";
+		}
+		
+		
+		
+		
 		if(!window.navigator.onLine){
 			alert("Cannot connect to the Internet. Check your connection and try again");
 			return false;		
 		}
 		
-		if (selectedapipath=='' || selectedapipath==null) {
+		if (selectedapipath=='' || selectedapipath==null ) {
 
 			alert("You must select or enter a valid API ENDPOINT please check and try again.");
 			document.getElementById('selectedapipath').focus();
@@ -134,6 +143,12 @@ function setKey(){
 		var apikey=document.getElementById('apikey').value;
 		var apisecret=document.getElementById('apisecret').value;
 		var selectedapipath=document.getElementById('selectedapipath').value;
+		
+		if ((selectedapipath=='' || selectedapipath==null) &&  document.getElementById('selectedapipathselector').value=="https://api.toridion.com") {
+		
+			selectedapipath="https://api.toridion.com";
+		}
+		
 		
 		
 		if (apikey=='' || apikey==null) {
