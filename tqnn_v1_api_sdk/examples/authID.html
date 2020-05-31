@@ -5,7 +5,7 @@
 <meta http-equiv="Expires" content="0" />
 <link href="styles/style.css" rel="stylesheet">
 <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
-<script src="scripts/examples.js" type="text/javascript"></script>
+<script src="scripts/examples.js?" type="text/javascript"></script>
 <link href="//fonts.googleapis.com/css?family=Source Sans Pro:700italic,500,700,400&amp;subset=latin,cyrillic-ext,latin-ext" rel="stylesheet" type="text/css">
 <link href="//fonts.googleapis.com/css?family=Open+Sans:300,300i,400,600,800" rel="stylesheet">
 <link href="//fonts.googleapis.com/css?family=PT Sans:700italic,500,700,400&amp;subset=latin,cyrillic-ext,latin-ext" rel="stylesheet" type="text/css">
@@ -33,11 +33,11 @@
 					<div class="input_container">
 						<h1>Input</h1>
 						<p>Enter a username and password and press "authenticate" to send a request to TQNN to authenticate the credentials.</p>
-						<input type="text" id="username" placeholder="username"><br>
-						<input type="text" id="password" placeholder="password"><br>
+						<input type="text" id="username" placeholder="username" onkeydown="$('#valid').hide(); $('#invalid').hide(); document.getElementById('api_response_div').style.backgroundColor = '#eeeeee';"><br>
+						<input type="text" id="password" placeholder="password"  onkeydown="$('#valid').hide(); $('#invalid').hide(); document.getElementById('api_response_div').style.backgroundColor = '#eeeeee';"><br>
 						<input type="hidden" id="user_request_id" value="demoapp"><br>
 						<input type="hidden" id="dataset" value="demoapp"><br>
-						<button id="action_button" onclick="authIDExample(); $('#api_response_div' ).get(0).scrollIntoView();">AUTHENTICATE</button>
+						<button id="action_button" onclick="$('#valid').hide(); $('#invalid').hide(); document.getElementById('api_response_div').style.backgroundColor = '#eeeeee'; authIDExample(); $('#api_response_div' ).get(0).scrollIntoView();">AUTHENTICATE</button>
 					</div>
 				</td>
 			</tr>
@@ -47,6 +47,8 @@
 					<div id="api_response_div" class="response_container">
 						<h1>Response JSON</h1>
 						<textarea id="api_response" rows="10" cols="80"></textarea>
+						<span id="invalid" style="display:none;"><h2>INVALID</h2></span>
+						<span id="valid"  style="display:none;"><h2>VALID</h2></span>
 					</div>
 				</td>
 			</tr>

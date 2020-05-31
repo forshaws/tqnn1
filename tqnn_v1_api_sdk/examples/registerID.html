@@ -33,11 +33,11 @@
 					<div class="input_container">
 						<h1>Input</h1>
 						<p>Enter a username and password and press "register" to send a request to TQNN to register the credentials.</p>
-						<input type="text" id="username" placeholder="username"><br>
-						<input type="text" id="password" placeholder="password"><br>
+						<input type="text" id="username" placeholder="username" onkeydown="$('#valid').hide(); $('#invalid').hide(); document.getElementById('api_response_div').style.backgroundColor = '#eeeeee';">><br>
+						<input type="text" id="password" placeholder="password" onkeydown="$('#valid').hide(); $('#invalid').hide(); document.getElementById('api_response_div').style.backgroundColor = '#eeeeee';">><br>
 						<input type="hidden" id="user_request_id" value="demoapp"><br>
 						<input type="hidden" id="dataset" value="demoapp"><br>
-						<button id="action_button" onclick="registerIDExample(); $('#api_response_div' ).get(0).scrollIntoView();">REGISTER</button>
+						<button id="action_button" onclick="$('#valid').hide(); $('#invalid').hide(); document.getElementById('api_response_div').style.backgroundColor = '#eeeeee'; registerIDExample(); $('#api_response_div' ).get(0).scrollIntoView();">REGISTER</button>
 					</div>
 				</td>
 			</tr>
@@ -47,6 +47,8 @@
 					<div id="api_response_div" class="response_container">
 						<h1>Response JSON</h1>
 						<textarea id="api_response" rows="10" cols="80"></textarea>
+						<span id="invalid" style="display:none;"><h2>INVALID</h2></span>
+						<span id="valid"  style="display:none;"><h2>VALID</h2></span>
 					</div>
 				</td>
 			</tr>

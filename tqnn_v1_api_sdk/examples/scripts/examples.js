@@ -37,6 +37,13 @@ function authIDExample(){
 		
 			var str = JSON.stringify(json, null, 2);
 			document.getElementById('api_response').value=str;
+			
+			if(json.error_message == "INVALID_OR_MISSING_CREDENTIALS"){
+				$("#valid").hide();
+				$("#invalid").show();
+				document.getElementById("api_response_div").style.backgroundColor = 'red';
+			}
+
 			return;
 			
 		}
@@ -48,13 +55,17 @@ function authIDExample(){
 			switch(json.tqnn_response){
 			
 			case "AUTHENTICATION_OK":
-				alert("Credentials are valid");
+				$("#valid").show();
+				$("#invalid").hide();
+				document.getElementById("api_response_div").style.backgroundColor = 'green';
 			break;
 			
 			case "AUTHENTICATION_FAILED":
-				alert("Credentials are invalid");
+				$("#valid").hide();
+				$("#invalid").show();
+				document.getElementById("api_response_div").style.backgroundColor = 'red';
 			break;
-			
+
 			}
 			
 					
@@ -99,6 +110,19 @@ function registerIDExample(){
 
 			var str = JSON.stringify(json, null, 2);
 			document.getElementById('api_response').value=str;
+			
+			if(json.error_message == "INVALID_OR_MISSING_CREDENTIALS"){
+				$("#valid").hide();
+				$("#invalid").show();
+				document.getElementById("api_response_div").style.backgroundColor = 'red';
+			}
+			
+			if(json.error_message == "UNKNOWN_API_ERROR"){
+				$("#valid").hide();
+				$("#invalid").show();
+				document.getElementById("api_response_div").style.backgroundColor = 'red';
+			}
+			
 			return;
 			
 		}
@@ -106,6 +130,17 @@ function registerIDExample(){
 
 			var str = JSON.stringify(json, null, 2)
 			document.getElementById('api_response').value=str;		
+			
+			switch(json.tqnn_response){
+			
+			case "REGISTERED_OK":
+				$("#valid").show();
+				$("#invalid").hide();
+				document.getElementById("api_response_div").style.backgroundColor = 'green';
+			break;
+
+
+			}
 		}
 
 	}).done(function() {
