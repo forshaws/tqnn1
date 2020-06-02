@@ -103,7 +103,7 @@ function registerIDExample(){
 	
 	$.post("../registerID.php", { credential0:username, credential1:password, multihash:1, dataset:dataset, returnauthtoken:1, user_request_id:user_request_id},
 	function(data,status) {
-	
+	//alert(data);
 		var json=JSON.parse(data);
 
 		if(json.error_message != "" && json.error_message != undefined  ){
